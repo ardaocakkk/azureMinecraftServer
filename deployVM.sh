@@ -28,7 +28,7 @@ sleep 3
 echo -e "${greenColour}"'Creating the NSG rule to open the 25565... '"${endColour}"
 #Creating the NSG rule to open the 25565
 
-az network nsg rule create --resource-group MinecraftGroup --nsg-name MinecraftAzureNSG --name Port_25565 --protocol '*' --source-address-prefixes Internet --priority 1010 --source-port-ranges '*' --destination-address-prefixes '*' --destination-port-ranges 25565 --access Allow
+az network nsg rule create --resource-group MinecraftGroupp --nsg-name MinecraftAzureNSG --name Port_25565 --protocol '*' --source-address-prefixes Internet --priority 1010 --source-port-ranges '*' --destination-address-prefixes '*' --destination-port-ranges 25565 --access Allow
 
 sleep 3
 
