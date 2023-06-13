@@ -10,8 +10,11 @@ turquoiseColour="\x1B[0;36m\033[1m"
 grayColour="\x1B[0;37m\033[1m"
 
 #Creating the resource group
+resourceGroup="MinecraftGroup"
+location="westeurope"
 echo -e "${greenColour}"'Creating the resource group... '"${endColour}"
-az group create -l westeurope -n MinecraftGroup
+
+az group create --name $resourceGroup --location $location
 
 sleep 3
 
