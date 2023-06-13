@@ -10,7 +10,7 @@ turquoiseColour="\x1B[0;36m\033[1m"
 grayColour="\x1B[0;37m\033[1m"
 
 #Creating the resource group
-resourceGroup="MinecraftGroup"
+resourceGroup="MinecraftGroupp"
 location="westeurope"
 echo -e "${greenColour}"'Creating the resource group... '"${endColour}"
 
@@ -21,7 +21,7 @@ sleep 3
 #Creating and deploying the Virtual Machine
 echo -e "${greenColour}"'Creating and deploying the Virtual Machine... '"${endColour}"
 
-az vm create --resource-group MinecraftGroup --name MinecraftAzure --image UbuntuLTS --admin-username minecraftuser --authentication-type ssh --generate-ssh-keys --public-ip-sku Standard --size Standard_B2ms --storage-sku Standard_LRS --os-disk-name MineOSHDD --os-disk-size-gb 30 --os-disk-caching ReadWrite --data-disk-sizes-gb 32 --data-disk-caching ReadWrite | tee results.txt
+az vm create --resource-group MinecraftGroupp --name MinecraftAzure --image UbuntuLTS --admin-username minecraftuser --authentication-type ssh --generate-ssh-keys --public-ip-sku Standard --size Standard_B2ms --storage-sku Standard_LRS --os-disk-name MineOSHDD --os-disk-size-gb 30 --os-disk-caching ReadWrite --data-disk-sizes-gb 32 --data-disk-caching ReadWrite | tee results.txt
 
 sleep 3
 
